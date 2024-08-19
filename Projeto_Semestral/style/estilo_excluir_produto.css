@@ -1,0 +1,102 @@
+/* ------------------------ Header ------------------------ */
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.voltar {
+    flex-grow: 1;
+    width: 0;
+}
+
+.fa-left-long {
+    font-size: 40px;
+    color: black;
+}
+
+.titulo {
+    padding-top: 10px;
+    flex-grow: 1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h_espaco3 {
+    flex-grow: 1;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Main ------------------------ */
+
+#form-excluir {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+#txt-excluir {
+    width: 40em;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+}
+
+#form-excluir button {
+    cursor: pointer;
+    padding: 10px;
+    width: 9em;
+    font-size: large;
+    background-color: rgb(201, 0, 0);
+    border-style: solid;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#form-excluir button:hover  {
+    background-color: rgb(155, 0, 0);
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Resposividade ------------------------ */
+
+@media only screen and (max-width: 1080px) {
+    #txt-excluir {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .titulo {
+        font-size: 30px;
+    }
+    
+    .fa-left-long {
+        font-size: 30px;
+    }
+
+    #txt-excluir {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .titulo {
+        font-size: 25px;
+    }
+
+    #txt-excluir {
+        font-size: 15px;
+    }
+
+    #form-excluir button {
+        padding: 7px;
+        font-size: 15px;
+    }
+}

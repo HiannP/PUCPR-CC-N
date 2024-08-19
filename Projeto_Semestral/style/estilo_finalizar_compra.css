@@ -1,0 +1,144 @@
+@import url("fonte.css"); /* Impotando fonte padrão */
+
+/* ------------------------ Header ------------------------ */
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.voltar {
+    flex-grow: 1;
+    width: 0;
+}
+
+.fa-left-long {
+    cursor: pointer;
+    font-size: 40px;
+    color: black;
+}
+
+.titulo {
+    padding-top: 10px;
+    flex-grow: 1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h-espaco3 {
+    flex-grow: 1;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Main ------------------------ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.caixa-compra {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #cacaca;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.finalizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.valor-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcoes-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botao-finalizar {
+    cursor: pointer;
+    text-align: center;
+    border-style: double;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e0e0e0;
+    background-color: #fff;
+    padding: 5px;
+    gap: 10px;
+}
+
+.produto img {
+    width: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Resposividade ------------------------ */
+
+@media only screen and (max-width: 850px) {
+    #formulario-pix img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .titulo {
+        font-size: 30px;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .fa-left-long {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 431px) {
+    .caixa-compra {
+        font-size: 15px;
+    }
+    
+    .produto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

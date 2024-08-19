@@ -1,0 +1,39 @@
+<!-- CARRINHO -->
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/estilo_carrinho.css" />
+        <link rel="stylesheet" href="../style/fontawesome-free-web/css/all.css" />
+        <script defer src="../js/funcoes_carrinho.js"></script>
+        <link rel="icon" type="image/x-icon" href="../image/header/Favicon.ico" />
+        <title>Carrinho</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../index.html"><img src="../image/header/logo_loja.webp" class="img-logo"></a>
+            </div> <!-- /logo -->
+            <div class="menu">
+                <div class="menu-icon" title="Menu">
+                    <i class="fa-solid fa-bars" onclick="drop_menu()"></i>
+                </div> <!-- /menu-icon -->
+                <div id="menu-dropdown" class="dropdown-conteudo">
+                    <a href="../index.html" title="Página Inicial"><i class="fa-solid fa-guitar"></i> Home</a>
+                    <a href="../admin/pagina_admin.html" title="Conta"><i class="fa-solid fa-circle-user"></i> Conta</a>
+                </div> <!-- /menu-dropdown -->
+            </div> <!-- /menu -->
+        </header>
+        <main class="secao-compra">
+            <div id="produtos">
+                <!-- PRODUTOS -->
+            </div> <!-- /compra -->
+            <aside class="card-compra">
+                <div class="valor">Valor Total<br>
+                    R$ <span id="resultado">0.00</span>
+                </div> <!-- /valor -->
+                <a title="Finalizar Compra" onclick="finalizar_compra()"><div class="botao-finalizar">Finalizar Compra</div></a>
+            </aside> <!-- /card-compra -->
+        </main> <!-- /secao-compra -->
+    </body>
+</html>

@@ -1,0 +1,126 @@
+/* ------------------------ Header ------------------------ */
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.voltar {
+    flex-grow: 1;
+    width: 0;
+}
+
+.fa-left-long {
+    font-size: 40px;
+    color: black;
+}
+
+.titulo {
+    padding-top: 10px;
+    flex-grow: 1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h_espaco3 {
+    flex-grow: 1;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Main ------------------------ */
+
+#form-cadastrar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 20px;
+}
+
+.selecao_imagem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+#imageFile {
+    width: 300px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#foto {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#nome {
+    width: 35em;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+}
+
+#preco {
+    width: 10em;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 5px;
+}
+
+#form-cadastrar button {
+    cursor: pointer;
+    padding: 10px;
+    width: 10em;
+    font-size: large;
+    background-color: rgb(0, 98, 179);
+    border-style: solid;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#form-cadastrar button:hover {
+    background-color: rgb(0, 74, 135);
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Resposividade ------------------------ */
+
+@media only screen and (max-width: 1024px) {
+    #nome {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .titulo {
+        font-size: 40px;
+    }
+    
+    .fa-left-long {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .titulo {
+        font-size: 30px;
+    }
+    
+    #imageFile {
+        width: 50%;
+    }
+
+    #foto {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

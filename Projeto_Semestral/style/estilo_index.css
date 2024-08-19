@@ -1,0 +1,198 @@
+@import url("fonte.css"); /* Impotando fonte padrão */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------ Header ------------------------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px 10px 10px;
+    background-image: url(../image/header/fundo_header.webp);
+    border-radius: 10px;
+}
+
+.logo-busca {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+.img-logo {
+    cursor: pointer;
+    width: 130px;
+}
+
+#busca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#txt-busca {
+    width: 15em;
+    font-size: 30px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    background-color: rgb(236, 236, 236);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-bars {
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(244, 244, 244)
+}
+
+.dropdown-conteudo {
+    display: none;
+    position: absolute;
+    top: 4em;
+    right: 17px;
+    padding: 20px;
+    gap: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 1;
+}
+
+.dropdown-conteudo a {
+    text-decoration: none;
+    color: #fd9d0c;
+}
+
+.show {display: flex; flex-direction: column;}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Main ------------------------ */
+
+#produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Cards ------------------------ */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #cacaca;
+    width: 250px;
+    border-width: 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+    transition: border-color, box-shadow 0.5s;
+}
+
+.card:hover {
+    border-color: #fd9d0c;
+    box-shadow: 5px 10px 14px #888888;
+}
+
+.card-imagem img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-titulo {
+    text-align: initial;
+    overflow-wrap: break-word;
+    width: 250px;
+    height: 3em;
+}
+
+.card-preco {
+    margin-top: 10px;
+}
+
+.card-carrinho-add {
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: medium;
+    padding: 10px;
+    background-color: #cacaca;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.card-carrinho-add:hover{
+    background-color: #fd9d0c;   
+}
+
+.confirmacao {
+    background-color: green !important;
+  }
+
+/* ------------------------------------------------------ */
+
+/* ------------------------ Resposividade ------------------------ */
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 5px 15px 5px 5px;
+    }
+    .logo-busca {
+        gap: 15px;
+    }
+    .img-logo {
+        width: 80px;
+    }
+    #txt-busca {
+        width: 90%;
+        font-size: 20px;
+    }
+    .fa-bars {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    .logo{
+        display: none;
+    }
+
+    #txt-busca {
+        font-size: 15px;
+    }
+
+    .fa-bars {
+        font-size: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 310px) {
+    .card {
+        width: 230px;
+        text-align: center;
+    }
+
+    .card-titulo {
+        width: 230px;
+        overflow-wrap: break-word;
+        height: 3em;
+    }
+}

@@ -1,0 +1,28 @@
+<!-- EXCLUIR PRODUTO -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/estilo_excluir_produto.css" />
+        <link rel="stylesheet" href="../style/fontawesome-free-web/css/all.css" />
+        <script defer src="../js/funcoes_admin.js"></script>
+        <link rel="icon" type="image/x-icon" href="../image/header/Favicon.ico" />
+        <title>Excluir Produto</title>
+    </head>
+    <body>
+        <header>
+            <div class="voltar">
+                <a href="pagina_admin.html"><i class="fa-solid fa-left-long" title="Voltar"></i></a>
+            </div> <!-- /voltar -->
+            <div class="titulo">Excluir Produto</div>
+            <div class="h_espaco3"></div>
+        </header>
+        <main>
+            <form id="form-excluir">
+                <input type="text" id="txt-excluir" name="txt-excluir" placeholder="Insira um nome (Exemplo: 'Guitarra elétrica Olympic white MG-30 Memphis')" />
+                <button type="button" onclick="excluir_prod()" title="Excluir Produto">Excluir Produto</button>
+            </form> <!-- /form-excluir -->
+        </main>
+    </body>
+</html>
